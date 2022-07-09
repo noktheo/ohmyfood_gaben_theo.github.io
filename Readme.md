@@ -5,4 +5,4 @@
 ## Link Module
 
 + [Sass](https://sass-lang.com/install)
-+ [Node]((https://sass-lang.com/install))
++ [Node](https://sass-lang.com/install)
