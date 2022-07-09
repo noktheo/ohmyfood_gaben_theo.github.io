@@ -243,8 +243,12 @@
     @extend .boxShadow02;
     animation-name: example;
     animation-duration: 1s;
+
+    animation-timing-function: ease;
     position: relative;
+    //animation-iteration-count: infinite;
     background-color: $backgroundColor01;
+    
     
 
     .menuInfo{
@@ -273,7 +277,7 @@
     .menuValid{
         opacity: 0;
         background-color:$backgroundColor05;
-       margin-left: 10px;
+        margin-left: 10px;
         width: 70px;
         height: 61px;
         margin-right: -50px;
@@ -301,14 +305,52 @@
     }
 }
 
+
+.articleMenu01Anim01{
+    animation-duration: 1.2s;
+}
+
+.articleMenu01Anim02{
+    animation-duration: 1.4s;
+}
+
+.articleMenu01Anim03{
+    animation-duration: 1.6s;
+}
+
+.articleMenu01Anim04{
+    animation-duration: 1.8s;
+}
+
+.articleMenu01Anim05{
+    animation-duration: 2s;
+}
+
+.articleMenu01Anim06{
+    animation-duration: 2.2s;
+}
+
+.articleMenu01Anim07{
+    animation-duration: 2.4s;
+}
+
+.articleMenu01Anim08{
+    animation-duration: 2.6s;
+}
+
+.articleMenu01Anim09{
+    animation-duration: 2.8s;
+}
+
 @keyframes example {
     0%   {
-        top:50px;
+        top:25px;
         opacity: 0;
     }
+
     100% {
         top: 0;
-        opacity: 100;;
+        opacity: 1;
     }
   }
 
