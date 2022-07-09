@@ -1,6 +1,6 @@
-## CMD live create css file to scss 
+## CMD Node live create css file to scss 
 
-    $ git config --global core.excludesFile ~/.gitignore
+    sass --watch ./style/style.scss ./style/style.css
 
 ## Link Module
 
