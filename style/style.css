@@ -373,14 +373,17 @@
 /**screen loading**/
 .screenLoading {
   position: fixed;
-  top: 0;
-  transition-duration: 3s;
-  background-color: white;
+  top: 100vh;
+  opacity: 0;
+  filter: blur(0);
+  background-color: #f6f6f6;
   width: 100%;
   height: 100%;
-  z-index: 1000;
-  animation-direction: reverse;
+  z-index: 200;
+  animation-duration: 5s;
   animation-name: screenLoading;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 .screenLoading svg {
   position: relative;
@@ -391,10 +394,16 @@
 
 @keyframes screenLoading {
   0% {
+    top: 0;
     opacity: 0;
   }
-  100% {
+  10% {
+    top: 0;
     opacity: 1;
+  }
+  100% {
+    top: -150vh;
+    opacity: 0;
   }
 }
 /*spinner anim**/
