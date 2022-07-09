@@ -1,0 +1,323 @@
+/*icon**/
+
+.icon01{
+    width:$iconSize01;
+    height:$iconSize01;
+    background-size:$iconSize01;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon00{
+    width:calc($iconSize01 / 1.3);
+    height:calc($iconSize01 / 1.3);
+    background-size:calc($iconSize01 / 1.3);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon000{
+    width:calc($iconSize01 / 2);
+    height:calc($iconSize01 / 2);
+    background-size:calc($iconSize01 / 2);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iconFavorite{
+    @extend.icon01;
+    background-image: url($iconFavorite01);
+    
+    &:hover{
+    background-image: url($iconFavorite02);
+    cursor: pointer;
+    }    
+}
+
+
+.iconBefore{
+    content:"";     
+    @extend.icon000;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+   
+}
+
+/**button**/
+
+.button01{
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: $texteColor01;
+    background: rgb(255,121,218);
+    background: linear-gradient(4deg, $color01 0%, $color02 100%);
+    @extend.boxShadow01;
+    font-size: $fontSize08;
+    font-weight: 500;
+
+    &:hover{
+        cursor: pointer;
+        color: $texteColor02;
+        background: linear-gradient(4deg, $color01 0%, $color02 61%);
+    }
+}
+
+.button02{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    background-color:transparent;
+    width: 100%;
+    margin-bottom: 10px;
+
+    p{
+        background-color: $color01;
+        border-radius: 50%;
+        padding: 5px;
+        width: 23px;
+        height: 19px;
+        color: $texteColor01;
+        font-size: $fontSize10;
+        margin-right: -10px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: left;
+        background-color: $backgroundColor01;
+        border-radius: 15px;
+        @extend.boxShadow01;
+        padding:15px;
+        padding-left: 30px;
+        height: 50px;
+        width: 100%;
+
+        img{
+            width:$iconSize00;
+            height:$iconSize00;
+            background-size:$iconSize00;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 20px;
+            filter: grayscale(100%);
+        }
+
+        h3{
+            margin-left: 10px;
+        }
+
+    }
+
+    &:hover{
+        cursor: pointer;
+
+        div{
+            background-color :$color04;
+        }
+
+        img{
+            filter: grayscale(0%);
+            filter: contrast(200%);
+        }
+    }
+}
+
+/***font**/
+
+.title01{
+    font-weight: 900;
+    font-size: $fontSize11;
+    margin-bottom: 20px;
+    
+}
+
+.title01Menu{
+    border-bottom: 2px solid $color05;
+    font-weight: 300; 
+    display: inline;
+    
+}
+
+@media screen and (min-width: 600px){
+    .title01{
+        font-size: $fontSize12;
+    }
+}
+
+/**food**/
+.articleFood01{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    border-radius: 15px;
+    @extend.boxShadow01;
+    margin-bottom: 20px;
+  
+
+    .boxImg01{
+        width: 100%;
+        height:180px;
+        overflow: hidden;
+
+        img{
+            width: 110%;
+            position: relative;
+            left: 50%;
+            transform:translateX(-50%);
+            transition-duration: 0.2s;
+        }
+    
+    }
+
+    .boxText01{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 15px;
+        background-color: $backgroundColor02;
+
+        p{
+            width: calc(100% - $iconSize01);
+            font-size:$fontSize10;
+
+            &:first-child{
+                font-weight: bold;
+                font-size:$fontSize11;
+               
+            }
+        }
+    }
+
+    &:hover{
+        img{
+            width: 120%;
+            transition-duration: 0.2s;
+        }
+        p{
+            color: $color01;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 600px){
+    .sectionMenu {
+        display: flex;
+        flex-wrap: wrap;
+
+        .title01{
+            width: 100%;
+        }
+    }
+
+    .articleFood01{
+        width: calc(50% - 10px);
+        margin-left: 10px;
+
+        &:first-child .articleFood01{
+            margin: 0;
+        }
+
+        &:last-child .articleFood01{
+            margin: 0;
+        }
+    }
+}
+
+.articleMenu01{
+    $paddinArticleMenu01:10px;
+
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    @extend .boxShadow02;
+    animation-name: example;
+    animation-duration: 1s;
+    position: relative;
+    background-color: $backgroundColor01;
+    
+
+    .menuInfo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding:$paddinArticleMenu01;
+    }
+    
+    h6{
+        font-size: $fontSize09;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-size: $fontSize08;
+        font-weight: 500;
+        color: $texteColor03;
+    }
+
+    .price{
+        font-weight: 600;
+        margin-top: auto;
+    }
+
+    .menuValid{
+        opacity: 0;
+        background-color:$backgroundColor05;
+       margin-left: 10px;
+        width: 70px;
+        height: 61px;
+        margin-right: -50px;
+        transition-duration: 0.5s;
+
+        img{
+            width: 30px;
+            position: relative;
+            left: 25%;
+            top:25%;
+          }
+    }
+
+    &:hover{
+        cursor: pointer;
+        .menuValid{
+            opacity: 100;
+            margin-right: 0px;
+            transition-duration: 0.5s;
+            img{
+                animation-name: rotate0;
+            animation-duration: 0.5s;
+            }
+        }
+    }
+}
+
+@keyframes example {
+    0%   {
+        top:50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 100;;
+    }
+  }
+
+
+  @keyframes rotate0 {
+    0%   {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
