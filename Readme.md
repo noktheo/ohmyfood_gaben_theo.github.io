@@ -1,6 +1,6 @@
 ## CMD live create css file to scss 
 
-    +$ git config --global core.excludesFile ~/.gitignore
+    $ git config --global core.excludesFile ~/.gitignore
 
 ## Link Module
 
