@@ -61,7 +61,6 @@ $marginUniversal01:20px;
     }
 }
 
-
 .paddingBox02{
     @extend.paddingBox;
     padding-bottom:20px;
@@ -71,7 +70,7 @@ $marginUniversal01:20px;
 
 
 @media screen and (min-width: 600px){
-    $marginUniversal01:40px;
+    $marginUniversal01:45px;
 
     .paddingBox{
         width: calc(100% - ($marginUniversal01 * 2));
@@ -79,15 +78,43 @@ $marginUniversal01:20px;
             bottom:50px;
             top:50px;
         }
+        background-color: green;
     }
 
     .paddingBox02{
-        background-color: red;
-        @extend.paddingBox;
-        padding-bottom:20px;
-        padding-top: 20px;
+        background-color: green;
+        
+        width: calc(100% - ($marginUniversal01 * 2));
+        padding: $marginUniversal01 {
+            bottom:20px;
+            top:20px;
+        }  
     }  
 }
+
+@media screen and (min-width: 800px){
+    $marginUniversal01:70px;
+
+    .paddingBox{
+        width: calc(100% - ($marginUniversal01 * 2));
+        padding: $marginUniversal01 {
+            bottom:50px;
+            top:50px;
+        }
+        background-color: blue;
+    }
+
+    .paddingBox02{
+        background-color: green;
+        
+        width: calc(100% - ($marginUniversal01 * 2));
+        padding: $marginUniversal01 {
+            bottom:20px;
+            top:20px;
+        }  
+    }  
+}
+
 
 
 

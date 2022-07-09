@@ -31,14 +31,34 @@
 
 @media screen and (min-width: 600px) {
   .paddingBox, .paddingBox02 {
-    width: calc(100% - 80px);
-    padding: 40px;
+    width: calc(100% - 90px);
+    padding: 45px;
     padding-bottom: 50px;
     padding-top: 50px;
+    background-color: green;
   }
 
   .paddingBox02 {
-    background-color: red;
+    background-color: green;
+    width: calc(100% - 90px);
+    padding: 45px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .paddingBox, .paddingBox02 {
+    width: calc(100% - 140px);
+    padding: 70px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: blue;
+  }
+
+  .paddingBox02 {
+    background-color: green;
+    width: calc(100% - 140px);
+    padding: 70px;
     padding-bottom: 20px;
     padding-top: 20px;
   }
