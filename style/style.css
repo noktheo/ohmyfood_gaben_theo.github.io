@@ -328,8 +328,9 @@
   transition-duration: 0.5s;
 }
 .articleMenu01:hover .menuValid img {
+  transform: rotate(360deg);
   animation-name: rotate0;
-  animation-duration: 0.5s;
+  animation-duration: 0.8s;
 }
 
 .articleMenu01Anim01 {
@@ -380,10 +381,10 @@
 }
 @keyframes rotate0 {
   0% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 /**screen loading**/
