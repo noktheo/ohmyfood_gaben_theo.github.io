@@ -280,10 +280,11 @@
   margin: 10px 0;
   overflow: hidden;
   animation-name: example;
-  animation-duration: 1s;
   animation-timing-function: ease;
   position: relative;
   background-color: #f6f6f6;
+  opacity: 0;
+  transition: all 2s ease-in;
 }
 .articleMenu01 .menuInfo {
   display: flex;
@@ -333,50 +334,66 @@
   animation-duration: 0.8s;
 }
 
-.articleMenu01Anim01 {
+.paddingBox02 .articleMenu01:nth-child(1) {
+  animation-duration: 0.2s;
+  animation-delay: 1.1s;
+  opacity: 1;
+}
+
+.paddingBox02 .articleMenu01:nth-child(2) {
+  animation-duration: 0.4s;
+  animation-delay: 1.2s;
+  opacity: 1;
+}
+
+.paddingBox02 .articleMenu01:nth-child(3) {
+  animation-duration: 0.6s;
+  animation-delay: 1.3s;
+  opacity: 1;
+}
+
+.paddingBox02 .articleMenu01:nth-child(4) {
+  animation-duration: 0.8s;
+  animation-delay: 1.4s;
+  opacity: 1;
+}
+
+.paddingBox02 .articleMenu01:nth-child(5) {
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  opacity: 1;
+}
+
+.paddingBox02 .articleMenu01:nth-child(6) {
   animation-duration: 1.2s;
+  animation-delay: 1.6s;
+  opacity: 1;
 }
 
-.articleMenu01Anim02 {
+.paddingBox02 .articleMenu01:nth-child(7) {
   animation-duration: 1.4s;
+  animation-delay: 1.7s;
+  opacity: 1;
 }
 
-.articleMenu01Anim03 {
+.paddingBox02 .articleMenu01:nth-child(8) {
   animation-duration: 1.6s;
+  animation-delay: 1.8s;
+  opacity: 1;
 }
 
-.articleMenu01Anim04 {
+.paddingBox02 .articleMenu01:nth-child(9) {
   animation-duration: 1.8s;
-}
-
-.articleMenu01Anim05 {
-  animation-duration: 2s;
-}
-
-.articleMenu01Anim06 {
-  animation-duration: 2.2s;
-}
-
-.articleMenu01Anim07 {
-  animation-duration: 2.4s;
-}
-
-.articleMenu01Anim08 {
-  animation-duration: 2.6s;
-}
-
-.articleMenu01Anim09 {
-  animation-duration: 2.8s;
+  animation-delay: 1.9s;
+  opacity: 1;
 }
 
 @keyframes example {
   0% {
-    top: 25px;
-    opacity: 0;
+    top: 30px;
   }
   100% {
     top: 0;
-    opacity: 1;
   }
 }
 @keyframes rotate0 {
