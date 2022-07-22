@@ -112,7 +112,7 @@ $marginUniversal01:20px;
 }
 
 @media screen and (min-width: 1200px){
-    $marginUniversal01:20%;
+    $marginUniversal01:25%;
 
     .paddingBox{
         width: calc(100% - ($marginUniversal01 * 2));

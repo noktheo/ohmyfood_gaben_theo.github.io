@@ -63,17 +63,17 @@
 }
 @media screen and (min-width: 1200px) {
   .paddingBox, .paddingBox02 {
-    width: 60%;
+    width: 50%;
     margin: auto;
-    padding: 20%;
+    padding: 25%;
     padding-bottom: 50px;
     padding-top: 50px;
   }
 
   .paddingBox02 {
-    width: 60%;
+    width: 50%;
     margin: auto;
-    padding: 20%;
+    padding: 25%;
     padding-bottom: 20px;
     padding-top: 20px;
   }
@@ -603,7 +603,7 @@ footer .iconFootPart01:before {
 
 /**footer**/
 footer li:hover a {
-  color: #9356DC;
+  color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
