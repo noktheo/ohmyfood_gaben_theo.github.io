@@ -1,83 +1,77 @@
 /*icon**/
 
-.icon01{
-    width:$iconSize01;
-    height:$iconSize01;
-    background-size:$iconSize01;
+.icon01 {
+    width: $iconSize01;
+    height: $iconSize01;
+    background-size: $iconSize01;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon00{
-    width:calc($iconSize01 / 1.3);
-    height:calc($iconSize01 / 1.3);
-    background-size:calc($iconSize01 / 1.3);
+.icon00 {
+    width: calc($iconSize01 / 1.3);
+    height: calc($iconSize01 / 1.3);
+    background-size: calc($iconSize01 / 1.3);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon000{
-    width:calc($iconSize01 / 2);
-    height:calc($iconSize01 / 2);
-    background-size:calc($iconSize01 / 2);
+.icon000 {
+    width: calc($iconSize01 / 2);
+    height: calc($iconSize01 / 2);
+    background-size: calc($iconSize01 / 2);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.iconFavorite{
+.iconFavorite {
     @extend.icon01;
     background-image: url($iconFavorite01);
     transition-duration: 0.4s;
-    
-    &:hover{
-    background-image: url($iconFavorite02);
-    cursor: pointer;
-    }    
+
+    &:hover {
+        background-image: url($iconFavorite02);
+        cursor: pointer;
+    }
 }
 
-
-
-
-
-
-.iconBefore{
-    content:"";     
+.iconBefore {
+    content: "";
     @extend.icon000;
     margin-right: 10px;
     position: relative;
     display: inline-block;
-   
 }
 
 /**button**/
 
-.button01{
+.button01 {
     border-radius: 20px;
     padding: 10px 20px;
     color: $texteColor01;
-    background: rgb(255,121,218);
+    background: rgb(255, 121, 218);
     background: linear-gradient(4deg, $color01 0%, $color02 100%);
-    @extend.boxShadow01;
+    @extend.boxshadow01 !optional;
     font-size: $fontSize08;
     font-weight: 500;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
         color: $texteColor02;
         background: linear-gradient(4deg, $color01 0%, $color02 61%);
     }
 }
 
-.button02{
+.button02 {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
-    background-color:transparent;
+    background-color: transparent;
     width: 100%;
     margin-bottom: 10px;
 
-    p{
+    p {
         background-color: $color01;
         border-radius: 50%;
         padding: 5px;
@@ -92,43 +86,42 @@
         align-items: center;
     }
 
-    div{
+    div {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: left;
         background-color: $backgroundColor01;
         border-radius: 15px;
-        @extend.boxShadow01;
-        padding:15px;
+        @extend.boxshadow01 !optional;
+        padding: 15px;
         padding-left: 30px;
         height: 50px;
         width: 100%;
 
-        img{
-            width:$iconSize00;
-            height:$iconSize00;
-            background-size:$iconSize00;
+        img {
+            width: $iconSize00;
+            height: $iconSize00;
+            background-size: $iconSize00;
             background-repeat: no-repeat;
             background-position: center;
             margin-right: 20px;
             filter: grayscale(100%);
         }
 
-        h3{
+        h3 {
             margin-left: 10px;
         }
-
     }
 
-    &:hover{
+    &:hover {
         cursor: pointer;
 
-        div{
-            background-color :$color04;
+        div {
+            background-color: $color04;
         }
 
-        img{
+        img {
             filter: grayscale(0%);
             filter: contrast(200%);
         }
@@ -137,108 +130,101 @@
 
 /***font**/
 
-.title01{
+.title01 {
     font-weight: 900;
     font-size: $fontSize11;
     margin-bottom: 20px;
-    
 }
 
-.title01Menu{
+.title01Menu {
     border-bottom: 2px solid $color05;
-    font-weight: 300; 
+    font-weight: 300;
     display: inline;
-    
 }
 
-@media screen and (min-width: 600px){
-    .title01{
+@media screen and (min-width: 600px) {
+    .title01 {
         font-size: $fontSize12;
     }
 }
 
 /**food**/
-.articleFood01{
+.articleFood01 {
     width: 100%;
-    height:auto;
+    height: auto;
     overflow: hidden;
     border-radius: 15px;
-    @extend.boxShadow01;
+    @extend.boxshadow01 !optional;
     margin-bottom: 20px;
-  
 
-    .boxImg01{
+    .boxImg01 {
         width: 100%;
-        height:180px;
+        height: 180px;
         overflow: hidden;
 
-        img{
+        img {
             width: 110%;
             position: relative;
             left: 50%;
-            transform:translateX(-50%);
+            transform: translateX(-50%);
             transition-duration: 0.2s;
         }
-    
     }
 
-    .boxText01{
+    .boxText01 {
         display: flex;
         flex-wrap: wrap;
         padding: 20px 15px;
         background-color: $backgroundColor02;
 
-        p{
+        p {
             width: calc(100% - $iconSize01);
-            font-size:$fontSize10;
+            font-size: $fontSize10;
 
-            &:first-child{
+            &:first-child {
                 font-weight: bold;
-                font-size:$fontSize11;
-               
+                font-size: $fontSize11;
             }
         }
     }
 
-    &:hover{
-        img{
+    &:hover {
+        img {
             width: 120%;
             transition-duration: 0.2s;
         }
-        p{
+        p {
             color: $color01;
         }
     }
 }
 
-
-
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
     .sectionMenu {
         display: flex;
         flex-wrap: wrap;
 
-        .title01{
+        .title01 {
             width: 100%;
         }
     }
 
-    .articleFood01{
+    .articleFood01 {
         width: calc(50% - 10px);
         margin-left: 10px;
 
-        &:first-child .articleFood01{
+        &:first-child .articleFood01 {
             margin: 0;
         }
 
-        &:last-child .articleFood01{
+        &:last-child .articleFood01 {
             margin: 0;
         }
     }
 }
 
-.articleMenu01{
-    $paddinArticleMenu01:10px;
+.articleMenu01 {
+    $paddinArticleMenu01: 10px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -253,59 +239,57 @@
     background-color: $backgroundColor01;
     opacity: 1;
     //transition:all 2s ease-in;
-    
-    
 
-    .menuInfo{
+    .menuInfo {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding:$paddinArticleMenu01;
+        padding: $paddinArticleMenu01;
     }
-    
-    h6{
+
+    h6 {
         font-size: $fontSize09;
         margin-bottom: 5px;
     }
 
-    p{
+    p {
         font-size: $fontSize08;
         font-weight: 500;
         color: $texteColor03;
     }
 
-    .price{
+    .price {
         font-weight: 600;
         margin-top: auto;
     }
 
-    .menuValid{
+    .menuValid {
         opacity: 0;
-        background-color:$backgroundColor05;
+        background-color: $backgroundColor05;
         margin-left: 10px;
         width: 70px;
         height: 61px;
         margin-right: -50px;
         transition-duration: 0.5s;
 
-        img{
+        img {
             width: 30px;
             position: relative;
             left: 25%;
-            top:25%;
-          }
+            top: 25%;
+        }
     }
 
-    &:hover{
+    &:hover {
         cursor: pointer;
-        .menuValid{
+        .menuValid {
             opacity: 100;
             margin-right: 0px;
             transition-duration: 0.5s;
-            img{
+            img {
                 transform: rotate(360deg);
                 animation-name: rotate0;
-            animation-duration: 0.8s;
+                animation-duration: 0.8s;
             }
         }
     }
@@ -313,14 +297,14 @@
 
 @for $i from 1 through 9 {
     .paddingBox02 .articleMenu01:nth-child(#{$i}) {
-      animation-duration: calc(0 + (($i / 10) * 2)) + s;
-      animation-delay: calc(2 + ($i / 10)) + s;
+        animation-duration: calc(0 + (($i / 10) * 2)) + s;
+        animation-delay: calc(2 + ($i / 10)) + s;
     }
-  }
+}
 
 @keyframes example {
-    0%   {
-        top:30px;
+    0% {
+        top: 30px;
         opacity: 0;
     }
 
@@ -330,54 +314,52 @@
     }
 }
 
-
-  @keyframes rotate0 {
-    0%   {
+@keyframes rotate0 {
+    0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-  }
+}
 
-  /**screen loading**/
+/**screen loading**/
 
-.screenLoading{
+.screenLoading {
     position: fixed;
-    top:100vh;
+    top: 100vh;
     opacity: 0;
     filter: blur(0);
-    background-color:$backgroundColor01;
+    background-color: $backgroundColor01;
     width: 100%;
     height: 100%;
     z-index: 200;
     animation-duration: 3s;
     animation-name: screenLoading;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;;
+    animation-timing-function: ease-in-out;
 
-
-    svg{
+    svg {
         position: relative;
-        top:50%;
-        left:50%;
-        width:500px;
+        top: 50%;
+        left: 50%;
+        width: 500px;
     }
 }
 
 @keyframes screenLoading {
-    0%   {
-        top:0;
+    0% {
+        top: 0;
         opacity: 0;
     }
 
-    10%   {
-        top:0;
+    10% {
+        top: 0;
         opacity: 1;
     }
 
     100% {
-        top:-150vh;
+        top: -150vh;
         opacity: 0;
     }
 }
@@ -388,16 +370,13 @@
     stroke-dasharray: 100;
     stroke-dashoffset: 100;
     animation: dash 25s linear alternate infinite;
-  }
-  
-  @keyframes dash {
+}
+
+@keyframes dash {
     from {
-      stroke-dashoffset: 1822;
+        stroke-dashoffset: 1822;
     }
     to {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
-
-
-
+}

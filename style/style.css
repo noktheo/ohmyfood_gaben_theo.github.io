@@ -3,7 +3,7 @@
 /**boxShadow**/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.boxShadow01, .articleFood01, .button02 div, .button01 {
+.boxShadow01 {
   box-shadow: 0px 1px 36px 1px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 0px 1px 36px 1px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 1px 36px 1px rgba(0, 0, 0, 0.26);
@@ -598,8 +598,8 @@ footer .iconFootPart01:before {
 }
 
 /**footer**/
-.dede:hover {
-  color: red;
+footer li:hover a {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -178,9 +178,12 @@ footer {
 
 /**footer**/
 
-.dede{
-    &:hover{
-        color:red;
+footer {
+    li {
+        &:hover {
+            a {
+                color: $color01;
+            }
+        }
     }
-  
 }
