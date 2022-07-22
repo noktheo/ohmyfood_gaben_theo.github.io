@@ -237,7 +237,7 @@
     position: relative;
     //animation-iteration-count: infinite;
     background-color: $backgroundColor01;
-    opacity: 1;
+    opacity: 0;
     //transition:all 2s ease-in;
 
     .menuInfo {
@@ -298,7 +298,7 @@
 @for $i from 1 through 9 {
     .paddingBox02 .articleMenu01:nth-child(#{$i}) {
         animation-duration: calc(0 + (($i / 10) * 2)) + s;
-        animation-delay: calc(2 + ($i / 10)) + s;
+        animation-delay: calc(1 + ($i / 10)) + s;
     }
 }
 
@@ -323,18 +323,18 @@
     }
 }
 
-/**screen loading**/
+/*************screen loading*************/
 
 .screenLoading {
     position: fixed;
-    top: 100vh;
+    top: 0;
     opacity: 0;
-    filter: blur(0);
     background-color: $backgroundColor01;
     width: 100%;
     height: 100%;
     z-index: 200;
     animation-duration: 3s;
+    animation-fill-mode: forwards;
     animation-name: screenLoading;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
@@ -350,7 +350,7 @@
 @keyframes screenLoading {
     0% {
         top: 0;
-        opacity: 0;
+        opacity: 1;
     }
 
     10% {
@@ -358,10 +358,16 @@
         opacity: 1;
     }
 
-    100% {
-        top: -150vh;
+    90% {
+        top: 0;
         opacity: 0;
     }
+
+    100% {
+        top: -100vh;
+        opacity: 0;
+    }
+
 }
 
 /*spinner anim**/
