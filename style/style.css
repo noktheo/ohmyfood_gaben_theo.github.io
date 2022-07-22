@@ -144,7 +144,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-.button02 p {
+.button02 .buttonTitle01 {
   background-color: #9356DC;
   border-radius: 50%;
   padding: 5px;
@@ -158,7 +158,7 @@
   justify-content: center;
   align-items: center;
 }
-.button02 div {
+.button02 .buttonText01 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -170,7 +170,7 @@
   height: 50px;
   width: 100%;
 }
-.button02 div img {
+.button02 .buttonText01 img {
   width: 25px;
   height: 25px;
   background-size: 25px;
@@ -179,7 +179,7 @@
   margin-right: 20px;
   filter: grayscale(100%);
 }
-.button02 div h3 {
+.button02 .buttonText01 h3 {
   margin-left: 10px;
 }
 .button02:hover {
@@ -403,7 +403,7 @@
   top: 0;
   opacity: 0;
   background-color: #f6f6f6;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: 200;
   animation-duration: 3s;
@@ -419,6 +419,11 @@
   width: 500px;
 }
 
+@media only screen and (max-width: 600px) {
+  .screenLoading svg {
+    left: 45%;
+  }
+}
 @keyframes screenLoading {
   0% {
     top: 0;
