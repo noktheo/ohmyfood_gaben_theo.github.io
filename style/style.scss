@@ -25,9 +25,25 @@ header {
     }
 }
 
-.logo01 {
+.boxLogo01 {
     width: 50%;
     max-width: 150px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.boxIconBack {
+    img {
+        border-radius: 15px;
+        transition-duration: 0.4s;
+    }
+
+    img:hover {
+        background-color: $color05;
+        
+    }
 }
 
 /**body**/
