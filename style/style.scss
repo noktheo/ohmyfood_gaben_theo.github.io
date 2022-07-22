@@ -1,34 +1,32 @@
-@import 'variable', 'component';
+@import "variable", "component";
 
-
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     border: 0;
-    color:black;
+    color: black;
 }
-
 
 /**header**/
 
-header{
+header {
     display: flex;
     justify-content: center;
     margin-bottom: 0px !important;
-    @extend.boxShadow02;
+    @extend.boxshadow02 !optional;
 
-    .icon01{
+    .icon01 {
         position: absolute;
         left: 10px;
-        top:15px;
+        top: 15px;
     }
 }
 
-.logo01{
-    width:50%;
+.logo01 {
+    width: 50%;
     max-width: 150px;
 }
 
@@ -36,7 +34,7 @@ header{
 
 /**main**/
 
-main{
+main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,16 +42,14 @@ main{
     background-color: $backgroundColor02;
 }
 
-
 /**button**/
 
-.articleButton01{
+.articleButton01 {
     background-color: $backgroundColor01;
 }
 
-
 /**article location**/
-.articleLocation{
+.articleLocation {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -61,100 +57,94 @@ main{
     justify-content: center;
     background-color: $backgroundColor04;
 
-    img{
+    img {
         margin-right: 10px;
     }
 
-    h3{
+    h3 {
         font-size: $fontSize08;
     }
 }
 
-
-
-
-.sectionFonc{
+.sectionFonc {
     display: flex;
     flex-direction: column;
 }
 
-
-.section01{
+.section01 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
-    .articleButton01{
+    .articleButton01 {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 40px;
 
-        h4{
+        h4 {
             font-size: $fontSize11;
             text-align: center;
         }
 
-        p{
+        p {
             margin: 20px 0;
             text-align: center;
         }
-
-     
     }
 }
 
 /**section menu**/
 
-.sectionMenu{
+.sectionMenu {
     background-color: $backgroundColor01;
 }
 
 /**footer**/
 
-footer{
+footer {
     width: calc(100% - 200px);
     padding-bottom: 40px !important;
     background-color: $backgroundColor03;
 
-    h2{
-        font-family: 'Shrikhand', cursive;
+    h2 {
+        font-family: "Shrikhand", cursive;
         color: $texteColor01;
         font-size: $fontSize10;
     }
-    
-    li{
+
+    li {
         margin-top: 5px;
 
-        a{
+        a {
             color: $texteColor01;
             font-weight: bold;
         }
     }
 
-    .iconFootRest01{
-        &:before{
-            background-image: url('/media/icon/icon_restaurant_ohmyfood_white_02.svg');
-            @extend.iconBefore;
+    .iconFootRest01 {
+        &:before {
+            background-image: url("/media/icon/icon_restaurant_ohmyfood_white_02.svg");
+            @extend.iconbefore !optional;
         }
     }
 
-    .iconFootPart01{
-        &:before{
-            background-image: url('/media/icon/icon_partenaire_ohmyfood_white_01.svg');
-            @extend.iconBefore;
+    .iconFootPart01 {
+        &:before {
+            background-image: url("/media/icon/icon_partenaire_ohmyfood_white_01.svg");
+            @extend.iconbefore !optional;
         }
     }
 }
 
 /***page menu**/
-.backgroundHeader01{
+.backgroundHeader01 {
     height: 200px;
     width: 100%;
     z-index: -100;
 
-    img{
+    img {
         width: 110%;
         position: relative;
         left: 50%;
@@ -165,24 +155,32 @@ footer{
     }
 }
 
-.sectionMenu01{
+.sectionMenu01 {
     z-index: 100;
     background-color: $backgroundColor01;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-bottom: 40px;
-    
 
-    .header{
+    .header {
         display: flex;
         flex-wrap: nowrap;
-        justify-content:space-between;
+        justify-content: space-between;
 
-        h4{
-            font-family: 'Shrikhand', cursive;
+        h4 {
+            font-family: "Shrikhand", cursive;
             margin-bottom: 30px;
             color: $texteColor02;
             font-size: $fontSize13;
         }
-    }   
+    }
+}
+
+/**footer**/
+
+.dede{
+    &:hover{
+        color:red;
+    }
+  
 }

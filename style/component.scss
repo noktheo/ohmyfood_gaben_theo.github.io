@@ -244,14 +244,15 @@
     border-radius: 10px;
     margin: 10px 0;
     overflow: hidden;
-    @extend .boxShadow02;
+    @extend .boxShadow02 !optional;
     animation-name: example;
     animation-timing-function: ease;
+    animation-fill-mode: forwards;
     position: relative;
     //animation-iteration-count: infinite;
     background-color: $backgroundColor01;
-    opacity: 0;
-    transition:all 2s ease-in;
+    opacity: 1;
+    //transition:all 2s ease-in;
     
     
 
@@ -312,21 +313,20 @@
 
 @for $i from 1 through 9 {
     .paddingBox02 .articleMenu01:nth-child(#{$i}) {
-      animation-duration: (0 + (($i / 10) * 2)) + s;
-      animation-delay: (1 + ($i / 10)) + s;
-      opacity: 1;
+      animation-duration: calc(0 + (($i / 10) * 2)) + s;
+      animation-delay: calc(2 + ($i / 10)) + s;
     }
   }
 
 @keyframes example {
     0%   {
         top:30px;
-        
+        opacity: 0;
     }
 
     100% {
         top: 0;
-       
+        opacity: 1;
     }
 }
 
