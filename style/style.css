@@ -238,11 +238,11 @@
   padding: 20px 15px;
   background-color: white;
 }
-.articleFood01 .boxText01 p {
+.articleFood01 .boxText01 p, .articleFood01 .boxText01 h4 {
   width: calc(100% - 30px);
   font-size: 18px;
 }
-.articleFood01 .boxText01 p:first-child {
+.articleFood01 .boxText01 h4:first-child {
   font-weight: bold;
   font-size: 20px;
 }
