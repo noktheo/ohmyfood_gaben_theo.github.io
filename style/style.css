@@ -163,6 +163,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: left;
+  transition-duration: 0.4s;
   background-color: #f6f6f6;
   border-radius: 15px;
   padding: 15px;
@@ -185,7 +186,7 @@
 .button02:hover {
   cursor: pointer;
 }
-.button02:hover div {
+.button02:hover .buttonText01 {
   background-color: #F5EDFF;
 }
 .button02:hover img {

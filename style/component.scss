@@ -91,6 +91,7 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: left;
+        transition-duration: 0.4s;
         background-color: $backgroundColor01;
         border-radius: 15px;
         @extend.boxshadow01 !optional;
@@ -117,7 +118,7 @@
     &:hover {
         cursor: pointer;
 
-        div {
+        .buttonText01 {
             background-color: $color04;
         }
 
