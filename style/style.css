@@ -292,9 +292,10 @@
   justify-content: space-between;
   width: 100%;
   padding: 10px;
+  transition-duration: 0.4s;
 }
 .articleMenu01 .menuInfo div {
-  width: 70%;
+  width: 80%;
 }
 .articleMenu01 .menuInfo div h6, .articleMenu01 .menuInfo div p {
   white-space: nowrap;
@@ -320,7 +321,7 @@
   margin-left: 10px;
   width: 70px;
   height: 61px;
-  margin-right: -50px;
+  margin-right: -80px;
   transition-duration: 0.5s;
 }
 .articleMenu01 .menuValid img {
@@ -341,6 +342,9 @@
   transform: rotate(360deg);
   animation-name: rotate0;
   animation-duration: 0.8s;
+}
+.articleMenu01:hover .menuInfo {
+  width: calc(100% - 100px);
 }
 
 .paddingBox02 .articleMenu01:nth-child(1) {

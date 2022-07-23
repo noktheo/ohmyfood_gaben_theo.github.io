@@ -246,12 +246,11 @@
         justify-content: space-between;
         width: 100%;
         padding: $paddinArticleMenu01;
-
+        transition-duration: 0.4s;
 
 
         div{
-           
-            width: calc(100% - 30%);
+            width: 80%;
 
             h6, p{
                 white-space: nowrap;
@@ -283,7 +282,7 @@
         margin-left: 10px;
         width: 70px;
         height: 61px;
-        margin-right: -50px;
+        margin-right: -80px;
         transition-duration: 0.5s;
 
         img {
@@ -300,11 +299,16 @@
             opacity: 100;
             margin-right: 0px;
             transition-duration: 0.5s;
+
             img {
                 transform: rotate(360deg);
                 animation-name: rotate0;
                 animation-duration: 0.8s;
             }
+        }
+
+        .menuInfo{
+            width: calc(100% - 100px);
         }
     }
 }
