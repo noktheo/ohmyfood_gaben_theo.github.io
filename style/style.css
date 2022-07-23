@@ -250,7 +250,7 @@
   width: 120%;
   transition-duration: 0.2s;
 }
-.articleFood01:hover p {
+.articleFood01:hover p, .articleFood01:hover h4 {
   color: #9356DC;
 }
 
