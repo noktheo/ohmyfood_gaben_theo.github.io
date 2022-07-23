@@ -245,6 +245,19 @@
         justify-content: space-between;
         width: 100%;
         padding: $paddinArticleMenu01;
+
+
+
+        div{
+           
+            width: calc(100% - 30%);
+
+            h6, p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
     }
 
     h6 {

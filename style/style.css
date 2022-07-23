@@ -292,6 +292,14 @@
   width: 100%;
   padding: 10px;
 }
+.articleMenu01 .menuInfo div {
+  width: 70%;
+}
+.articleMenu01 .menuInfo div h6, .articleMenu01 .menuInfo div p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .articleMenu01 h6 {
   font-size: 16px;
   margin-bottom: 5px;
