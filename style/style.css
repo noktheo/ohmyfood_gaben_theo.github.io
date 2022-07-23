@@ -17,7 +17,7 @@
 
 /**font**/
 /**padding**/
-.paddingBox, .paddingBox02 {
+.paddingBox {
   width: calc(100% - 40px);
   padding: 20px;
   padding-bottom: 50px;
@@ -30,7 +30,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  .paddingBox, .paddingBox02 {
+  .paddingBox {
     width: calc(100% - 90px);
     padding: 45px;
     padding-bottom: 50px;
@@ -45,7 +45,7 @@
   }
 }
 @media screen and (min-width: 800px) {
-  .paddingBox, .paddingBox02 {
+  .paddingBox {
     width: 70%;
     margin: auto;
     padding: 15%;
@@ -62,7 +62,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .paddingBox, .paddingBox02 {
+  .paddingBox {
     width: 50%;
     margin: auto;
     padding: 25%;
@@ -125,14 +125,14 @@
   padding: 10px 20px;
   color: white;
   background: #ff79da;
-  background: linear-gradient(4deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(4deg, #9356dc 0%, #ff79da 100%);
   font-size: 14px;
   font-weight: 500;
 }
 .button01:hover {
   cursor: pointer;
   color: black;
-  background: linear-gradient(4deg, #9356DC 0%, #FF79DA 61%);
+  background: linear-gradient(4deg, #9356dc 0%, #ff79da 61%);
 }
 
 .button02 {
@@ -145,7 +145,7 @@
   margin-bottom: 10px;
 }
 .button02 .buttonTitle01 {
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
   padding: 5px;
   width: 23px;
@@ -187,7 +187,7 @@
   cursor: pointer;
 }
 .button02:hover .buttonText01 {
-  background-color: #F5EDFF;
+  background-color: #f5edff;
 }
 .button02:hover img {
   filter: grayscale(0%);
@@ -202,7 +202,7 @@
 }
 
 .title01Menu {
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 2px solid #99e2d0;
   font-weight: 300;
   display: inline;
 }
@@ -238,7 +238,8 @@
   padding: 20px 15px;
   background-color: white;
 }
-.articleFood01 .boxText01 p, .articleFood01 .boxText01 h4 {
+.articleFood01 .boxText01 p,
+.articleFood01 .boxText01 h4 {
   width: calc(100% - 30px);
   font-size: 18px;
 }
@@ -250,8 +251,9 @@
   width: 120%;
   transition-duration: 0.2s;
 }
-.articleFood01:hover p, .articleFood01:hover h4 {
-  color: #9356DC;
+.articleFood01:hover p,
+.articleFood01:hover h4 {
+  color: #9356dc;
 }
 
 @media screen and (min-width: 600px) {
@@ -297,7 +299,8 @@
 .articleMenu01 .menuInfo div {
   width: 80%;
 }
-.articleMenu01 .menuInfo div h6, .articleMenu01 .menuInfo div p {
+.articleMenu01 .menuInfo div h6,
+.articleMenu01 .menuInfo div p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -317,7 +320,7 @@
 }
 .articleMenu01 .menuValid {
   opacity: 0;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-left: 10px;
   width: 70px;
   height: 61px;
@@ -505,7 +508,7 @@ header .icon01, header .iconFavorite {
   transition-duration: 0.4s;
 }
 .boxIconBack img:hover {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
 /**body**/
@@ -530,7 +533,7 @@ main {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 .articleLocation img {
   margin-right: 10px;
@@ -632,7 +635,7 @@ footer .iconFootPart01:before {
 
 /**footer**/
 footer li:hover a {
-  color: #99E2D0;
+  color: #99e2d0;
 }
 
 /*# sourceMappingURL=style.css.map */

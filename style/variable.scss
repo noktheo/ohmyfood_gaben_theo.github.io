@@ -1,139 +1,130 @@
 /**Color**/
-$color01:#9356DC;
-$color02:#FF79DA;
-$color03:#99E2D0;
-$color04:#F5EDFF;
-$color05:#99E2D0;
+$color01: #9356dc;
+$color02: #ff79da;
+$color03: #99e2d0;
+$color04: #f5edff;
+$color05: #99e2d0;
 
-$backgroundColor01:#f6f6f6;
-$backgroundColor02:white;
-$backgroundColor03:#353535;
-$backgroundColor04:#EAEAEA;
-$backgroundColor05:#99E2D0;
+$backgroundColor01: #f6f6f6;
+$backgroundColor02: white;
+$backgroundColor03: #353535;
+$backgroundColor04: #eaeaea;
+$backgroundColor05: #99e2d0;
 
-$texteColor01:white;
-$texteColor02:black;
-$texteColor03:rgb(44, 44, 44);
+$texteColor01: white;
+$texteColor02: black;
+$texteColor03: rgb(44, 44, 44);
 
 /***icon***/
-$iconFavorite01:"../media/icon/icon_favorite_ohmyfood_01.svg";
-$iconFavorite02:"../media/icon/icon_favorite_ohmyfood_02.svg";
+$iconFavorite01: "../media/icon/icon_favorite_ohmyfood_01.svg";
+$iconFavorite02: "../media/icon/icon_favorite_ohmyfood_02.svg";
 
-$iconSize00:25px;
-$iconSize01:30px;
-$iconSize03:20px;
+$iconSize00: 25px;
+$iconSize01: 30px;
+$iconSize03: 20px;
 
 /**boxShadow**/
-.boxShadow01{
-    box-shadow: 0px 1px 36px 1px rgba(0,0,0,0.26);
-    -webkit-box-shadow: 0px 1px 36px 1px rgba(0,0,0,0.26);
-    -moz-box-shadow: 0px 1px 36px 1px rgba(0,0,0,0.26);
+.boxShadow01 {
+    box-shadow: 0px 1px 36px 1px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0px 1px 36px 1px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px 1px 36px 1px rgba(0, 0, 0, 0.26);
 }
 
-.boxShadow02{
-    box-shadow: -2px 4px 35px -21px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -2px 4px 35px -21px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 4px 35px -21px rgba(0,0,0,0.75);
+.boxShadow02 {
+    box-shadow: -2px 4px 35px -21px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 4px 35px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 4px 35px -21px rgba(0, 0, 0, 0.75);
 }
 
 /**font**/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-$fontSize08:14px;
-$fontSize09:16px;
-$fontSize10:18px;
-$fontSize11:20px;
-$fontSize12:22px;
-$fontSize13:24px;
+$fontSize08: 14px;
+$fontSize09: 16px;
+$fontSize10: 18px;
+$fontSize11: 20px;
+$fontSize12: 22px;
+$fontSize13: 24px;
 
 /**padding**/
 
-$marginUniversal01:20px;
+$marginUniversal01: 20px;
 
-
-
-.paddingBox{
+.paddingBox {
     width: calc(100% - ($marginUniversal01 * 2));
     padding: $marginUniversal01 {
-        bottom:50px;
-        top:50px;
+        bottom: 50px;
+        top: 50px;
     }
 }
 
-.paddingBox02{
-    @extend.paddingBox;
-    padding-bottom:20px;
+.paddingBox02 {
+    @extend.paddingbox !optional;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
+@media screen and (min-width: 600px) {
+    $marginUniversal01: 45px;
 
-
-@media screen and (min-width: 600px){
-    $marginUniversal01:45px;
-
-    .paddingBox{
+    .paddingBox {
         width: calc(100% - ($marginUniversal01 * 2));
         padding: $marginUniversal01 {
-            bottom:50px;
-            top:50px;
+            bottom: 50px;
+            top: 50px;
         }
     }
 
-    .paddingBox02{       
+    .paddingBox02 {
         width: calc(100% - ($marginUniversal01 * 2));
         padding: $marginUniversal01 {
-            bottom:20px;
-            top:20px;
-        }  
-    }  
+            bottom: 20px;
+            top: 20px;
+        }
+    }
 }
 
-@media screen and (min-width: 800px){
-    $marginUniversal01:15%;
+@media screen and (min-width: 800px) {
+    $marginUniversal01: 15%;
 
-    .paddingBox{
-        width: calc(100% - ($marginUniversal01 * 2));
-         margin: auto;
-        padding: $marginUniversal01 {
-            bottom:50px;
-            top:50px;
-        }
-    }
-
-    .paddingBox02{       
+    .paddingBox {
         width: calc(100% - ($marginUniversal01 * 2));
         margin: auto;
         padding: $marginUniversal01 {
-            bottom:20px;
-            top:20px;
-        }  
-    }  
-}
-
-@media screen and (min-width: 1200px){
-    $marginUniversal01:25%;
-
-    .paddingBox{
-        width: calc(100% - ($marginUniversal01 * 2));
-         margin: auto;
-        padding: $marginUniversal01 {
-            bottom:50px;
-            top:50px;
+            bottom: 50px;
+            top: 50px;
         }
     }
 
-    .paddingBox02{       
+    .paddingBox02 {
         width: calc(100% - ($marginUniversal01 * 2));
         margin: auto;
         padding: $marginUniversal01 {
-            bottom:20px;
-            top:20px;
-        }  
-    }  
+            bottom: 20px;
+            top: 20px;
+        }
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    $marginUniversal01: 25%;
 
+    .paddingBox {
+        width: calc(100% - ($marginUniversal01 * 2));
+        margin: auto;
+        padding: $marginUniversal01 {
+            bottom: 50px;
+            top: 50px;
+        }
+    }
 
-
-
+    .paddingBox02 {
+        width: calc(100% - ($marginUniversal01 * 2));
+        margin: auto;
+        padding: $marginUniversal01 {
+            bottom: 20px;
+            top: 20px;
+        }
+    }
+}
