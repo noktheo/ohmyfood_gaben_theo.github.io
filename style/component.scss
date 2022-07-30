@@ -178,10 +178,17 @@
         padding: 20px 15px;
         background-color: $backgroundColor02;
 
+        a{
+            width:calc(100% - $iconSize01);
+
+        }
+
         p,
         h4 {
-            width: calc(100% - $iconSize01);
             font-size: $fontSize10;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         h4:first-child {
@@ -190,7 +197,7 @@
         }
     }
 
-    &:hover {
+    a:hover {
         img {
             width: 120%;
             transition-duration: 0.2s;

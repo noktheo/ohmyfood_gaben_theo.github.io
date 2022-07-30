@@ -25,6 +25,8 @@
 }
 
 .paddingBox02 {
+  width: calc(100% - 40px);
+  padding: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -238,21 +240,26 @@
   padding: 20px 15px;
   background-color: white;
 }
+.articleFood01 .boxText01 a {
+  width: calc(100% - 30px);
+}
 .articleFood01 .boxText01 p,
 .articleFood01 .boxText01 h4 {
-  width: calc(100% - 30px);
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .articleFood01 .boxText01 h4:first-child {
   font-weight: bold;
   font-size: 20px;
 }
-.articleFood01:hover img {
+.articleFood01 a:hover img {
   width: 120%;
   transition-duration: 0.2s;
 }
-.articleFood01:hover p,
-.articleFood01:hover h4 {
+.articleFood01 a:hover p,
+.articleFood01 a:hover h4 {
   color: #9356dc;
 }
 
