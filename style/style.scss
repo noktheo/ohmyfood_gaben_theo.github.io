@@ -55,13 +55,13 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: $backgroundColor02;
+    background-color: $backgroundColorWhite;
 }
 
 /**button**/
 
 .articleButton01 {
-    background-color: $backgroundColor01;
+    background-color: $backgroundColorWhite;
 }
 
 /**article location**/
@@ -80,7 +80,7 @@ main {
     }
 
     h3 {
-        font-size: $psize;
+        font-size: $nativSize;
     }
 }
 
@@ -102,7 +102,7 @@ main {
         padding-bottom: 40px;
 
         h4 {
-            font-size: $fontSize11;
+            font-size: $titleMiniSize;
             text-align: center;
         }
 
@@ -116,7 +116,7 @@ main {
 /**section menu**/
 
 .sectionMenu {
-    background-color: $backgroundColor01;
+    background-color: $backgroundColorWhite;
 }
 
 /**footer**/
@@ -128,15 +128,15 @@ footer {
 
     h2 {
         font-family: "Shrikhand", cursive;
-        color: $texteColor01;
-        font-size: $fontSize10;
+        color: $texteColorLight;
+        font-size: $pBigSize;
     }
 
     li {
         margin-top: 5px;
 
         a {
-            color: $texteColor01;
+            color: $texteColorLight;
             font-weight: bold;
         }
     }
@@ -175,7 +175,7 @@ footer {
 
 .sectionMenu01 {
     z-index: 100;
-    background-color: $backgroundColor01;
+    background-color: $backgroundColorWhite;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-bottom: 40px;
@@ -188,8 +188,8 @@ footer {
         h4 {
             font-family: "Shrikhand", cursive;
             margin-bottom: 30px;
-            color: $texteColor02;
-            font-size: $fontSize13;
+            color: $texteColorDark;
+            font-size: $titleBigSize;
         }
     }
 }

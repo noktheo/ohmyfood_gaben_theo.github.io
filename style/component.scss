@@ -1,36 +1,36 @@
 /*icon**/
 
 .icon01 {
-    width: $iconSize01;
-    height: $iconSize01;
-    background-size: $iconSize01;
+    width: $iconSizeBig;
+    height: $iconSizeBig;
+    background-size: $iconSizeBig;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .icon00 {
-    width: calc($iconSize01 / 1.3);
-    height: calc($iconSize01 / 1.3);
-    background-size: calc($iconSize01 / 1.3);
+    width: calc($iconSizeBig / 1.3);
+    height: calc($iconSizeBig / 1.3);
+    background-size: calc($iconSizeBig / 1.3);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .icon000 {
-    width: calc($iconSize01 / 2);
-    height: calc($iconSize01 / 2);
-    background-size: calc($iconSize01 / 2);
+    width: calc($iconSizeBig / 2);
+    height: calc($iconSizeBig / 2);
+    background-size: calc($iconSizeBig / 2);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .iconFavorite {
     @extend.icon01;
-    background-image: url($iconFavorite01);
+    background-image: url($iconFavoriteOff);
     transition-duration: 0.4s;
 
     &:hover {
-        background-image: url($iconFavorite02);
+        background-image: url($iconFavoriteActive);
         cursor: pointer;
     }
 }
@@ -48,16 +48,16 @@
 .button01 {
     border-radius: 20px;
     padding: 10px 20px;
-    color: $texteColor01;
+    color: $texteColorLight;
     background: rgb(255, 121, 218);
     background: linear-gradient(4deg, $colorPrimaire 0%, $colorSecondaire 100%);
     @extend.boxshadow01 !optional;
-    font-size: $psize;
+    font-size: $nativSize;
     font-weight: 500;
 
     &:hover {
         cursor: pointer;
-        color: $texteColor02;
+        color: $texteColorDark;
         background: linear-gradient(4deg, $colorPrimaire 0%, $colorSecondaire 61%);
     }
 }
@@ -77,8 +77,8 @@
         padding: 5px;
         width: 23px;
         height: 19px;
-        color: $texteColor01;
-        font-size: $fontSize10;
+        color: $texteColorLight;
+        font-size: $pBigSize;
         margin-right: -10px;
         z-index: 100;
         display: flex;
@@ -92,7 +92,7 @@
         align-items: center;
         justify-content: left;
         transition-duration: 0.4s;
-        background-color: $backgroundColor01;
+        background-color: $backgroundColorWhite;
         border-radius: 15px;
         @extend.boxshadow01 !optional;
         padding: 15px;
@@ -101,9 +101,9 @@
         width: 100%;
 
         img {
-            width: $iconSize00;
-            height: $iconSize00;
-            background-size: $iconSize00;
+            width: $iconSizeNativ;
+            height: $iconSizeNativ;
+            background-size: $iconSizeNativ;
             background-repeat: no-repeat;
             background-position: center;
             margin-right: 20px;
@@ -119,7 +119,7 @@
         cursor: pointer;
 
         .buttonText01 {
-            background-color: $color04;
+            background-color: $colorWhite;
         }
 
         img {
@@ -133,7 +133,7 @@
 
 .title01 {
     font-weight: 900;
-    font-size: $fontSize11;
+    font-size: $titleMiniSize;
     margin-bottom: 20px;
 }
 
@@ -145,7 +145,7 @@
 
 @media screen and (min-width: 600px) {
     .title01 {
-        font-size: $fontSize12;
+        font-size: $titleSize;
     }
 }
 
@@ -176,16 +176,16 @@
         display: flex;
         flex-wrap: wrap;
         padding: 20px 15px;
-        background-color: $backgroundColor02;
+        background-color: $backgroundColorWhite;
 
         a{
-            width:calc(100% - $iconSize01);
+            width:calc(100% - $iconSizeBig);
 
         }
 
         p,
         h4 {
-            font-size: $fontSize10;
+            font-size: $pBigSize;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -193,7 +193,7 @@
 
         h4:first-child {
             font-weight: bold;
-            font-size: $fontSize11;
+            font-size: $titleMiniSize;
         }
     }
 
@@ -247,7 +247,7 @@
     animation-fill-mode: forwards;
     position: relative;
     //animation-iteration-count: infinite;
-    background-color: $backgroundColor01;
+    background-color: $backgroundColorWhite;
     opacity: 0;
     //transition:all 2s ease-in;
 
@@ -271,14 +271,14 @@
     }
 
     h6 {
-        font-size: $fontSize09;
+        font-size: $titleMiniSize;
         margin-bottom: 5px;
     }
 
     p {
-        font-size: $psize;
+        font-size: $nativSize;
         font-weight: 500;
-        color: $texteColor03;
+        color: $texteColorDarkLite;
     }
 
     .price {
@@ -357,7 +357,7 @@
     position: fixed;
     top: 0;
     opacity: 0;
-    background-color: $backgroundColor01;
+    background-color: $backgroundColorWhite;
     width: 100vw;
     height: 100%;
     z-index: 200;
