@@ -7,9 +7,9 @@ $colorWhite: #f5edff;
 /*background*/
 $backgroundColorGreyLite: #f6f6f6;
 $backgroundColorWhite: white;
-$backgroundColor03: #353535;
-$backgroundColor04: #eaeaea;
-$backgroundColor05: #99e2d0;
+$backgroundColorGreyDark: #353535;
+$backgroundColorWhiteLite: #eaeaea;
+$backgroundColorGreenL: #99e2d0;
 
 /*text*/
 $texteColorLight: white;
@@ -38,9 +38,11 @@ $iconSizeBig: 30px;
 }
 
 /**font**/
+/*link*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
+/*size*/
 $nativSize: 14px;
 
 $pSize: calc(#{$nativSize} + 2px);
