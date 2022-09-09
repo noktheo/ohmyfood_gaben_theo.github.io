@@ -41,7 +41,7 @@ header {
     }
 
     img:hover {
-        background-color: $color05;
+        background-color: $colorTertiaire;
         
     }
 }
@@ -80,7 +80,7 @@ main {
     }
 
     h3 {
-        font-size: $fontSize08;
+        font-size: $psize;
     }
 }
 
@@ -200,7 +200,7 @@ footer {
     li {
         &:hover {
             a {
-                color: $color03;
+                color: $colorTertiaire;
             }
         }
     }

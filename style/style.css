@@ -128,7 +128,7 @@
   color: white;
   background: #ff79da;
   background: linear-gradient(4deg, #9356dc 0%, #ff79da 100%);
-  font-size: 14px;
+  font-size: calc(calc(14px - 2px) - 2px);
   font-weight: 500;
 }
 .button01:hover {
@@ -317,7 +317,7 @@
   margin-bottom: 5px;
 }
 .articleMenu01 p {
-  font-size: 14px;
+  font-size: calc(calc(14px - 2px) - 2px);
   font-weight: 500;
   color: #2c2c2c;
 }
@@ -546,7 +546,7 @@ main {
   margin-right: 10px;
 }
 .articleLocation h3 {
-  font-size: 14px;
+  font-size: calc(calc(14px - 2px) - 2px);
 }
 
 .sectionFonc {

@@ -50,15 +50,15 @@
     padding: 10px 20px;
     color: $texteColor01;
     background: rgb(255, 121, 218);
-    background: linear-gradient(4deg, $color01 0%, $color02 100%);
+    background: linear-gradient(4deg, $colorPrimaire 0%, $colorSecondaire 100%);
     @extend.boxshadow01 !optional;
-    font-size: $fontSize08;
+    font-size: $psize;
     font-weight: 500;
 
     &:hover {
         cursor: pointer;
         color: $texteColor02;
-        background: linear-gradient(4deg, $color01 0%, $color02 61%);
+        background: linear-gradient(4deg, $colorPrimaire 0%, $colorSecondaire 61%);
     }
 }
 
@@ -72,7 +72,7 @@
     margin-bottom: 10px;
 
     .buttonTitle01 {
-        background-color: $color01;
+        background-color: $colorPrimaire;
         border-radius: 50%;
         padding: 5px;
         width: 23px;
@@ -138,7 +138,7 @@
 }
 
 .title01Menu {
-    border-bottom: 2px solid $color05;
+    border-bottom: 2px solid $colorTertiaire;
     font-weight: 300;
     display: inline;
 }
@@ -205,7 +205,7 @@
 
         p,
         h4 {
-            color: $color01;
+            color: $colorPrimaire;
         }
     }
 }
@@ -276,7 +276,7 @@
     }
 
     p {
-        font-size: $fontSize08;
+        font-size: $psize;
         font-weight: 500;
         color: $texteColor03;
     }

@@ -1,9 +1,8 @@
 /**Color**/
-$color01: #9356dc;
-$color02: #ff79da;
-$color03: #99e2d0;
+$colorPrimaire: #9356dc;
+$colorSecondaire: #ff79da;
+$colorTertiaire: #99e2d0;
 $color04: #f5edff;
-$color05: #99e2d0;
 
 $backgroundColor01: #f6f6f6;
 $backgroundColor02: white;
@@ -40,12 +39,15 @@ $iconSize03: 20px;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-$fontSize08: 14px;
+$psize: 14px;
 $fontSize09: 16px;
 $fontSize10: 18px;
 $fontSize11: 20px;
 $fontSize12: 22px;
 $fontSize13: 24px;
+
+$psize: calc(#{$psize} - 2px);
+$psize: calc(#{$psize} - 2px);
 
 /**padding**/
 
